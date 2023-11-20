@@ -54,7 +54,7 @@ openssl req -newkey rsa:2048 -nodes -keyout etcd-admin.key -subj "/CN=admin" -ou
 openssl x509 -req -in etcd-admin.csr  -CA etcd-ca.crt -CAkey etcd-ca.key -CAcreateserial -days 3650 -out etcd-admin.crt  # sign the csr
 ```
 
-## check certificates
+### check certificates
 ``` bash
 openssl x509 -text -noout -in etcd-ca.crt
 openssl x509 -text -noout -in etcd-admin.crt
