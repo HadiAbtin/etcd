@@ -118,12 +118,12 @@ systemctl enable etcd   # start service after restart the server
 ``` bash
  ETCDCTL_API=3 /opt/etcdctl --cacert etcd-ca.crt --cert etcd-admin.crt --key etcd-admin.key --endpoints https://110.0.0.1:2379,https://110.0.0.2:2379,https://110.0.0.3:2379,https://110.0.0.4:2379,https://110.0.0.5:2379 -w table member list
 ```
-![image](https://github.com/HadiAbtin/etcd/assets/151436034/1588cee9-6091-479c-bb8b-15262c14dd33)
+![image](https://github.com/HadiAbtin/etcd/assets/151436034/a61ba100-d37a-4019-bba3-c924873cc150)
 
 ``` bash
 ETCDCTL_API=3 /opt/etcdctl --cacert etcd-ca.crt --cert etcd-admin.crt --key etcd-admin.key --endpoints https://110.0.0.1:2379,https://110.0.0.2:2379,https://110.0.0.3:2379,https://110.0.0.4:2379,https://110.0.0.5:2379 -w table endpoint status
 ```
-![image](https://github.com/HadiAbtin/etcd/assets/151436034/e5003b93-9797-45d5-9fa1-3dc83ebd60a4)
+![image](https://github.com/HadiAbtin/etcd/assets/151436034/76d4f594-591e-43dd-931a-712e741678ef)
 
 Check performance
 ``` bash
